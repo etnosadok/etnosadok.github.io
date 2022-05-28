@@ -1,6 +1,0 @@
-[submodule "themes/zzo"]
-	path = themes/zzo
-	url = https://github.com/zzossig/hugo-theme-zzo.git
-[submodule "themes/meghna"]
-	path = themes/meghna
-	url = https://github.com/themefisher/meghna-hugo
