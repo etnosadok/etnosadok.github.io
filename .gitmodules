@@ -4,3 +4,9 @@
 [submodule "themes/meghna"]
 	path = themes/meghna
 	url = https://github.com/themefisher/meghna-hugo
+[submodule "themes/hugo-fresh"]
+	path = themes/hugo-fresh
+	url = https://github.com/StefMa/hugo-fresh.git
+[submodule "themes/bookworm-light"]
+	path = themes/bookworm-light
+	url = https://github.com/gethugothemes/bookworm-light.git
