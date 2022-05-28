@@ -1,11 +1,6 @@
 ######################## default configuration ####################
-<<<<<<< HEAD
 baseURL = ""
 title = "Лелече гніздечко"
-=======
-baseURL = "https://demo.gethugothemes.com/bookworm-light/"
-title = "Bookworm - Personal Blog Template"
->>>>>>> mack_2_main
 theme = "bookworm-light"
 # post pagination
 paginate = "5"
