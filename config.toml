@@ -1,216 +1,131 @@
-######################## default configuration ####################
-baseURL = ""
-title = "Лелече гніздечко"
-theme = "bookworm-light"
-# post pagination
-paginate = "5"
-# post excerpt
-summaryLength = "20"
-# google analytics
-googleAnalytics = "" # example : UA-123-45
-# disqus short name
-disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
+baseURL       = "http://example.org/"
+languageCode  = "en-us"
+title         = "Roxo | Creative Design Agency"
+theme         = "roxo-hugo"
+summarylength = 25
 
-############################# Modules ##############################
-[module.hugoVersion]
-extended = true
-min = "0.87.0"
+# Site Menusscxv 
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "Home"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Portfolio"
+    url     = "portfolio"
+    weight  = 3
+  [[menu.nav]]
+    name    = "Blog"
+    url     = "blog"
+    weight  = 4
+  [[menu.nav]]
+    name    = "Get in touch"
+    url     = "contact"
+    weight  = 5
 
-############################# Image Processing ##############################
-[imaging]
-quality = "95"
-
-############################# Outputs ##############################
-[outputs]
-home = ["HTML", "RSS", "JSON"]
-
-[markup.goldmark.renderer]
-unsafe= true
-
-
-############################## Plugins ##############################
-# CSS Plugins
-[[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
-link = "plugins/line-awesome/css/line-awesome.min.css"
-[[params.plugins.css]]
-link = "https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap"
-
-# JS Plugins
-[[params.plugins.js]]
-link = "plugins/jquery/jquery.min.js"
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/instagram-feed/instagram-feed.js"
-[[params.plugins.js]]
-link = "plugins/search/fuse.min.js"
-[[params.plugins.js]]
-link = "plugins/search/mark.js"
-[[params.plugins.js]]
-link = "plugins/search/search.js"
-
-# site variables
-[params.variables]
-font_primary = "Mulish"
-h1 = "64px"
-h1_lg = "52px"
-h1_md = "42px"
-h2 = "38px"
-h2_md = "30px"
-h3 = "30px"
-h3_md = "24px"
-h4 = "24px"
-h5 = "18px"
-h6 = "16px"
-white = "#ffffff"
-black = "#000000"
-dark = "#152035"
-gray = "#747577"
-light = "#FAFAFA"
-color_primary = "#01AD9F"
-
-#################### default parameters ################################
+# Site Params
 [params]
-logo = "images/logo.png"
-logo_width = "200px"
-favicon = "images/favicon.png"
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
-# contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
-# search
-search = true
-# main section
-mainSections = ["blog"]
-# copyright
-copyright = "Designed & Developed By [Gethugothemes](https://gethugothemes.com/)"
+  logo = "images/logo.png"
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
+  author = "StaticMania"
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  # We're using formspree.io for form handling, paste your formspree url below
+  formspreeFormUrl  = "https://formspree.io/myykjpje"
 
-# Preloader
-[params.preloader]
-enable = false
-preloader = "" # use jpg, png, svg or gif format.
+  # Contact Form
+  [params.contactForm]
+    placeholder_first_name        = "First Name"
+    placeholder_last_name         = "Last Name"
+    placeholder_email             = "Email"
+    placeholder_project_type      = "Project Type"
+    placeholder_about_the_project = "About the Project"
+    send_message                  = "Send Message"
 
-# Instagram feed
-[params.instafeed]
-enable = false
-instagram_user = "bookworm"
-access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1NmpxZA3RTbnU1MXpDNVBHTzZAMOFlxcGlkVHBKdjhqSnUybERhNWdQSE5hVmtXT013MEhOQVJJRGJBRURn"
-
-# Subscription
-[params.subscription]
-enable = false
-# mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
-title = "Subscribe for our monthly newsletter."
-input_placeholder = "Enter your email"
-
-# cookies
-[params.cookies]
-enable = false
-expire_days = 2
-
-
-############################# Main Menu ########################
-[[menu.main]]
-name = "Домашній"
-url = "/"
-weight = 1
+    [[params.contactForm.projectType]]
+      value = "gd"
+      title  = "Graphics Design"
+    [[params.contactForm.projectType]]
+      value = "wd"
+      title  = "Web Design"
   
-[[menu.main]]
-name = "Про"
-url = "about/"
-weight = 3
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Get in touch"
+    url     = "contact"
   
-[[menu.main]]
-name = "Контакт"
-url = "contact/"
-weight = 4
-  
-# [[menu.main]]
-# name = "Buy Premium"
-# url = "https://gethugothemes.com/products/bookworm/"
-# weight = 5
 
-[[menu.main]]
-weight = 6
-url = "#"
-name = "Сторінки"
-hasChildren = true
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/hero-background.jpg"
+    heading               = "We’re a Design Studio That Belies In the Great Ideas"
+    tagline               = "WE WORK HARD, WE PLAY HARD"
+    primary_button        = "See Our Works"
+    primary_button_url    = "portfolio"
+    secondary_button      = "Connect with Us"
+    secondary_button_url  = "contact"
 
-  [[menu.main]]
-  parent = "Сторінки"
-  name = "Автор"
-  url = "author/"
-  weight = 1
-  
-  [[menu.main]]
-  parent = "Сторінки"
-  name = "Теги"
-  url = "tags/"
-  weight = 2
-  
-  [[menu.main]]
-  parent = "Сторінки"
-  name = "Категорія"
-  url = "categories/"
-  weight = 3
-  
-  [[menu.main]]
-  parent = "Сторінки"
-  name = "Елементи"
-  weight = 4
-  url = "elements/"
-  
-  [[menu.main]]
-  parent = "Сторінки"
-  name = "Приватність"
-  url = "privacy/"
-  weight = 5
-  
-  [[menu.main]]
-  parent = "Сторінки"
-  name = "Умови та умови"
-  url = "terms-conditions/"
-  weight = 6
+  [params.portfolio]
+    enable    = true
+    title     = "OUR RECENT WORKS"
+    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
 
-############################# Footer Menu ########################
-[[menu.footer]]
-name = "Про"
-url = "about/"
-weight = 1
+  [params.call_to_action]
+    enable              = true
+    background_image    = "images/backgrounds/cta-background.jpg"
+    title               = "LET’S WORK TOGETHER"
+    primary_button      = "Submit Query"
+    primary_button_url  = "contact"
+    secondary_button    = "Not Convinced"
+    secondary_button_url = "portfolio"
 
-[[menu.footer]]
-name = "Автори"
-url = "author/"
-weight = 2
-
-[[menu.footer]]
-name = "Приватність"
-url = "privacy/"
-weight = 3
-
-[[menu.footer]]
-name = "Умови та умови"
-url = "terms-conditions/"
-weight = 4
-
-# Social Icons
-[[params.social]]
-icon = "lab la-facebook-f" # https://icons8.com/line-awesome
-url = "https://www.facebook.com/"
-
-[[params.social]]
-icon = "lab la-twitter" # https://icons8.com/line-awesome
-url = "https://www.twitter.com/"
-
-[[params.social]]
-icon = "lab la-instagram" # https://icons8.com/line-awesome
-url = "https://www.instagram.com/"
-
-[[params.social]]
-icon = "lab la-linkedin-in" # https://icons8.com/line-awesome
-url = "https://www.linkedin.com/"
+  [params.footer]
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
+      phone   = "409-896-1444"
+      email   = "info@roxo.co"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About Company"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Projects"
+          url  = "portfolio"
+        [[params.footer.sitemap.link]]
+          name = "Blog"
+          url  = "blog"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Social Media"
+        [[params.footer.social.link]]
+          name = "Medium"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "Behance"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "Dribbble"
+          url  = "#"
+        [[params.footer.social.link]]
+          name = "Instagram"
+          url  = "#"
+      # Footer Service
+      [params.footer.service]
+        title       = "We help brands:"
+        description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"
