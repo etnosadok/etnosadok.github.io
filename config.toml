@@ -1,6 +1,11 @@
 ######################## default configuration ####################
+<<<<<<< HEAD
 baseURL = ""
 title = "Лелече гніздечко"
+=======
+baseURL = "https://demo.gethugothemes.com/bookworm-light/"
+title = "Bookworm - Personal Blog Template"
+>>>>>>> mack_2_main
 theme = "bookworm-light"
 # post pagination
 paginate = "5"
@@ -101,7 +106,11 @@ access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1Nmpx
 
 # Subscription
 [params.subscription]
+<<<<<<< HEAD
 enable = false
+=======
+enable = true
+>>>>>>> mack_2_main
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
@@ -116,16 +125,25 @@ expire_days = 2
 
 ############################# Main Menu ########################
 [[menu.main]]
+<<<<<<< HEAD
 name = "Домашній"
+=======
+name = "Home"
+>>>>>>> mack_2_main
 url = "/"
 weight = 1
   
 [[menu.main]]
+<<<<<<< HEAD
 name = "Про"
+=======
+name = "About"
+>>>>>>> mack_2_main
 url = "about/"
 weight = 3
   
 [[menu.main]]
+<<<<<<< HEAD
 name = "Контакт"
 url = "contact/"
 weight = 4
@@ -134,67 +152,127 @@ weight = 4
 # name = "Buy Premium"
 # url = "https://gethugothemes.com/products/bookworm/"
 # weight = 5
+=======
+name = "Contact"
+url = "contact/"
+weight = 4
+  
+[[menu.main]]
+name = "Buy Premium"
+url = "https://gethugothemes.com/products/bookworm/"
+weight = 5
+>>>>>>> mack_2_main
 
 [[menu.main]]
 weight = 6
 url = "#"
+<<<<<<< HEAD
 name = "Сторінки"
 hasChildren = true
 
   [[menu.main]]
   parent = "Сторінки"
   name = "Автор"
+=======
+name = "Pages"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "Pages"
+  name = "Author"
+>>>>>>> mack_2_main
   url = "author/"
   weight = 1
   
   [[menu.main]]
+<<<<<<< HEAD
   parent = "Сторінки"
   name = "Теги"
+=======
+  parent = "Pages"
+  name = "Tags"
+>>>>>>> mack_2_main
   url = "tags/"
   weight = 2
   
   [[menu.main]]
+<<<<<<< HEAD
   parent = "Сторінки"
   name = "Категорія"
+=======
+  parent = "Pages"
+  name = "Category"
+>>>>>>> mack_2_main
   url = "categories/"
   weight = 3
   
   [[menu.main]]
+<<<<<<< HEAD
   parent = "Сторінки"
   name = "Елементи"
+=======
+  parent = "Pages"
+  name = "Elements"
+>>>>>>> mack_2_main
   weight = 4
   url = "elements/"
   
   [[menu.main]]
+<<<<<<< HEAD
   parent = "Сторінки"
   name = "Приватність"
+=======
+  parent = "Pages"
+  name = "Privacy"
+>>>>>>> mack_2_main
   url = "privacy/"
   weight = 5
   
   [[menu.main]]
+<<<<<<< HEAD
   parent = "Сторінки"
   name = "Умови та умови"
+=======
+  parent = "Pages"
+  name = "Terms & Conditions"
+>>>>>>> mack_2_main
   url = "terms-conditions/"
   weight = 6
 
 ############################# Footer Menu ########################
 [[menu.footer]]
+<<<<<<< HEAD
 name = "Про"
+=======
+name = "About"
+>>>>>>> mack_2_main
 url = "about/"
 weight = 1
 
 [[menu.footer]]
+<<<<<<< HEAD
 name = "Автори"
+=======
+name = "Authors"
+>>>>>>> mack_2_main
 url = "author/"
 weight = 2
 
 [[menu.footer]]
+<<<<<<< HEAD
 name = "Приватність"
+=======
+name = "Privacy"
+>>>>>>> mack_2_main
 url = "privacy/"
 weight = 3
 
 [[menu.footer]]
+<<<<<<< HEAD
 name = "Умови та умови"
+=======
+name = "Terms & Conditions"
+>>>>>>> mack_2_main
 url = "terms-conditions/"
 weight = 4
 
