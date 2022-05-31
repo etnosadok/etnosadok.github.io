@@ -13,3 +13,6 @@
 [submodule "themes/roxo-hugo"]
 	path = themes/roxo-hugo
 	url = https://github.com/StaticMania/roxo-hugo.git
+[submodule "themes/restaurant-hugo"]
+	path = themes/restaurant-hugo
+	url = https://github.com/gethugothemes/restaurant-hugo.git

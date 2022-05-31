@@ -1,131 +1,157 @@
-baseURL       = "https://etnosadok.github.io/"
-languageCode  = "en-us"
-title         = "Roxo | Creative Design Agency"
-theme         = "roxo-hugo"
-summarylength = 25
+######################## default configuration ####################
+baseURL = ""
+languageCode = "en-us"
+title = "Лелече гніздечко"
+theme = "restaurant-hugo"
+summaryLength = "10"
+paginate = 4
 
-# Site Menusscxv 
-[menu]
-  # Navbar Menus
-  [[menu.nav]]
-    name    = "Home"
-    url     = ""
-    weight  = 1
-  [[menu.nav]]
-    name    = "About"
-    url     = "about"
-    weight  = 2
-  [[menu.nav]]
-    name    = "Portfolio"
-    url     = "portfolio"
-    weight  = 3
-  [[menu.nav]]
-    name    = "Blog"
-    url     = "blog"
-    weight  = 4
-  [[menu.nav]]
-    name    = "Get in touch"
-    url     = "contact"
-    weight  = 5
+############################# Plugins ##############################
 
-# Site Params
+# CSS Plugins
+[[params.plugins.css]]
+URL = "css/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "css/slick.css"
+[[params.plugins.css]]
+URL = "css/font-awesome.min.css"
+[[params.plugins.css]]
+URL = "css/animate.min.css"
+[[params.plugins.css]]
+URL = "css/venobox.css"
+[[params.plugins.css]]
+URL = "css/main.css"
+[[params.plugins.css]]
+URL = "css/responsive.css"
+
+# JS Plugins
+[[params.plugins.js]]
+URL = "js/jquery.min.js"
+[[params.plugins.js]]
+URL = "js/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "js/slick.min.js"
+[[params.plugins.js]]
+URL = "js/wow.min.js"
+[[params.plugins.js]]
+URL = "js/venobox.min.js"
+[[params.plugins.js]]
+URL = "js/main.js"
+
+############################## navigation ###############################
+
+[[menu.main]]
+name = "Домашня"
+URL = "hero-area"
+weight = 1
+
+[[menu.main]]
+name = "Про нас"
+URL = "about-us"
+weight = 2
+
+[[menu.main]]
+name = "Блог"
+URL = "blog"
+weight = 3
+
+# [[menu.main]]
+# name = "Ціни"
+# URL = "price"
+# weight = 4
+
+[[menu.main]]
+name = "Розсилка"
+URL = "subscribe"
+weight = 5
+
+[[menu.main]]
+name = "Наші контакти"
+URL = "contact-us"
+weight = 6
+
+
+#################### default parameters ################################
 [params]
-  logo = "images/logo.png"
-  dateFormat = "26 FEB 1994"
-  # Meta data
-  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
-  author = "StaticMania"
-  # Google Analitycs
-  googleAnalitycsID = "Your ID"
-  # We're using formspree.io for form handling, paste your formspree url below
-  formspreeFormUrl  = "https://formspree.io/myykjpje"
+logo = "images/logo.png"
+# meta data
+author = "Themefisher"
+description = "This is meta description"
+# google analitycs ID
+google_analitycs_id = "Your ID"
+# mainSections
+main_sections = ["post"]
+# copyright
+copyright = "Copyright &copy; 2021 - {year} Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
 
-  # Contact Form
-  [params.contactForm]
-    placeholder_first_name        = "First Name"
-    placeholder_last_name         = "Last Name"
-    placeholder_email             = "Email"
-    placeholder_project_type      = "Project Type"
-    placeholder_about_the_project = "About the Project"
-    send_message                  = "Send Message"
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use .png , .svg or .gif format
 
-    [[params.contactForm.projectType]]
-      value = "gd"
-      title  = "Graphics Design"
-    [[params.contactForm.projectType]]
-      value = "wd"
-      title  = "Web Design"
-  
-  # Navbar Action Button
-  [params.navAction]
-    status  = true
-    name    = "Get in touch"
-    url     = "contact"
-  
+################################### Footer ############################
+[params.footer]
+enable = true
+contactInfoTitle = "Контактна <span>ІНФОРМАЦІЯ</span> "
+blogTitle = "Останні <span>НОВИНИ</span>"
+galleryTitle = "Фото <span>ГАЛЕРЕЯ</span>"
+socialTitle = "Слідкуй <span>ЗА НАМИ</span>"
 
-  # Banner Section
-  [params.banner]
-    enable                = true
-    background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "We’re a Design Studio That Belies In the Great Ideas"
-    tagline               = "WE WORK HARD, WE PLAY HARD"
-    primary_button        = "See Our Works"
-    primary_button_url    = "portfolio"
-    secondary_button      = "Connect with Us"
-    secondary_button_url  = "contact"
+############################ footer contact item
+[[params.footer.contactItem]]
+title = "Телефон"
+icon = "fa fa-phone"
+content = "016742 323313"
 
-  [params.portfolio]
-    enable    = true
-    title     = "OUR RECENT WORKS"
-    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
+[[params.footer.contactItem]]
+title = "Адреса"
+icon = "fa fa-map-marker"
+content = "2046 Blue Spruce Lane Laurel Canada"
 
-  [params.call_to_action]
-    enable              = true
-    background_image    = "images/backgrounds/cta-background.jpg"
-    title               = "LET’S WORK TOGETHER"
-    primary_button      = "Submit Query"
-    primary_button_url  = "contact"
-    secondary_button    = "Not Convinced"
-    secondary_button_url = "portfolio"
+[[params.footer.contactItem]]
+title = "E mail"
+icon = "fa fa-envelope"
+content = "rest@gmail.com - rest@mail"
 
-  [params.footer]
-    # Footer Contact Info
-    [params.footer.contactInfo]
-      title   = "Contact Info"
-      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
-      phone   = "409-896-1444"
-      email   = "info@roxo.co"
-      # Footer Sitemap
-      [params.footer.sitemap]
-        title   = "Sitemap"
-        [[params.footer.sitemap.link]]
-          name = "About Company"
-          url  = "about"
-        [[params.footer.sitemap.link]]
-          name = "Projects"
-          url  = "portfolio"
-        [[params.footer.sitemap.link]]
-          name = "Blog"
-          url  = "blog"
-        [[params.footer.sitemap.link]]
-          name = "Contact"
-          url  = "contact"
-      # Footer Social Media
-      [params.footer.social]
-        title   = "Social Media"
-        [[params.footer.social.link]]
-          name = "Medium"
-          url  = "#"
-        [[params.footer.social.link]]
-          name = "Behance"
-          url  = "#"
-        [[params.footer.social.link]]
-          name = "Dribbble"
-          url  = "#"
-        [[params.footer.social.link]]
-          name = "Instagram"
-          url  = "#"
-      # Footer Service
-      [params.footer.service]
-        title       = "We help brands:"
-        description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"
+# ######################### footer gallery
+# [[params.footer.gallery]]
+# image = "images/slider/slider-img-1.jpg"
+
+# [[params.footer.gallery]]
+# image = "images/slider/slider-img-2.jpg"
+
+# [[params.footer.gallery]]
+# image = "images/slider/slider-img-3.jpg"
+
+# [[params.footer.gallery]]
+# image = "images/slider/slider-img-4.jpg"
+
+# [[params.footer.gallery]]
+# image = "images/slider/slider-img-1.jpg"
+
+# [[params.footer.gallery]]
+# image = "images/slider/slider-img-2.jpg"
+
+# [[params.footer.gallery]]
+# image = "images/slider/slider-img-2.jpg"
+
+######################## Social Icon 
+[[params.footer.socialLink]]
+icon = "facebook"
+link = "https://fb.com/themefisher"
+
+[[params.footer.socialLink]]
+icon = "twitter"
+link = "https://fb.com/themefisher"
+
+[[params.footer.socialLink]]
+icon = "dribbble"
+link = "https://fb.com/themefisher"
+
+[[params.footer.socialLink]]
+icon = "camera-retro"
+link = "https://fb.com/themefisher"
+
+[[params.footer.socialLink]]
+icon = "instagram"
+link = "https://fb.com/themefisher"

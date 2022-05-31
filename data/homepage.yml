@@ -1,0 +1,89 @@
+################## Hero area ##################
+hero_area:
+  enable : true
+  bg_image : "https://etnosadok.com.ua/__scale/uploads/s/i/c/6/ic6omtbgit34/img/full_srzdS7QW.jpg?quality=85&width=1500&webp=1"
+  overlay : false
+
+################### Gallery ###################
+gallery:
+  enable : true
+  title : "Фото радісного дитинства"
+  images:
+    - "https://etnosadok.com.ua/uploads/s/i/c/6/ic6omtbgit34/img/full_H7JhG88m.jpg"
+    - "https://etnosadok.com.ua/uploads/s/i/c/6/ic6omtbgit34/img/full_BS7Ex9Fg.jpg"
+    - "https://etnosadok.com.ua/uploads/s/i/c/6/ic6omtbgit34/img/full_SqHVfYe1.jpg"
+    - "https://etnosadok.com.ua/uploads/s/i/c/6/ic6omtbgit34/img/full_Myhofe8d.jpg"
+    - "https://etnosadok.com.ua/uploads/s/i/c/6/ic6omtbgit34/img/full_XGa4hVVZ.jpg"
+    - "images/slider/slider-img-1.jpg"
+    - "images/slider/slider-img-2.jpg"
+    - "images/slider/slider-img-3.jpg"
+    - "images/slider/slider-img-4.jpg"
+
+################ About #######################
+about:
+  enable : true
+  image : "https://etnosadok.com.ua/__scale/uploads/s/i/c/6/ic6omtbgit34/img/full_bA7y3Kzw.jpg?quality=85&width=960&webp=1"
+  title : "Класний заголовок про <span> ЛЕЛЕЧЕ ГНІЗДЕЧКО</span> кінець заголовка"
+  description : |
+    Тут увесь текст буде форматовано по центру
+
+    # head1
+
+    ## head 2
+
+    Можна використовувати спеціальні теги
+
+    Його краще офрмити один раз
+  
+################# Blog ######################
+blog:
+  enable : true
+  title : "Які <span>Круті</span> заходи проходили"
+  bg_image : "https://etnosadok.com.ua/__scale/uploads/s/i/c/6/ic6omtbgit34/img/full_4O3pteaA.jpg?quality=85&width=960&webp=1"
+  overlay : true
+
+
+################# food Menu ################
+pricing:
+  enable : false
+  title : "Our Easy <span>PRICE</span>"
+  description: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+  subtitle : "FEATURED ON THE WEEK"
+  pricing_item:
+  - title: "Pancakes n' Such Titas"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+    price : "$ 125.00"
+
+  - title: "Caesar Salad"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+    price : "$ 100.00"
+
+  - title: "Steak with a Garlic and Parsley Risotto"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+    price : "$ 20.00"
+
+  - title: "Meat of Skewers"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+    price : "$ 45.00"
+
+  - title: "Pancakes n' Such"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&"
+    price : "$ 25.00"
+
+################### Subscription ################
+subscription:
+  enable : true
+  bg_image : "https://etnosadok.com.ua/__scale/uploads/s/i/c/6/ic6omtbgit34/img/full_1QC0LtkB.jpg?quality=85&width=960&webp=1"
+  title : "Є можливість додати <span>РОЗСИЛКУ</span>новин"
+  description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+  #Mailchimp subscription configaration 
+  form_action : "https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece278932a6e9925f2e70a61&amp;id=b1e227529e"
+  formName : "b_f9__5ece2732a6e9925f2e70a61_b1e227529e"
+  overlay : true
+
+################ Contact #######################
+contact:
+  enable : true
+  title: "Let's <span> Contact Us </span>"
+  subtitle: "SIGN UP FOR EMAIL ALERTS"
+  form_action : "#" #contact form works with formspree.io
