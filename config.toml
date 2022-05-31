@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = ""
+baseURL = "https://etnosadok.github.io"
 languageCode = "en-us"
 title = "Лелече гніздечко"
 theme = "restaurant-hugo"
